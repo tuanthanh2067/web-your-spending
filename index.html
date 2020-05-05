@@ -1,0 +1,43 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Record your spending</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap" rel="stylesheet">
+    <script src="main.js" defer></script>
+</head>
+<body>
+    <div class="overlay" id="overlay">
+        <div class="form">
+            <h2><span id='dayInsideOverlay'></span></h2>
+            <ul class='list'></ul>
+            <div class="bottom-btn">
+                <button class='save' id='btn-save'>Save</button>
+                <button class='add' id='btn-add'>Add</button>
+            </div>
+            
+        </div>
+    </div>
+
+    <header>
+        <div class="left-most">
+            <button class="btn-create" id="btn-new-sheet">New</button>
+            <button class="btn-deleteAll" id="btn-delete-sheets">Delete All Sheets</button>
+            <h3>Lorem ipsum dolor sit amet.</h3>
+        </div>
+
+        <div class="middle">
+            <a href="#">Your Spending</a>
+        </div>
+
+        <div class="right-most">
+            <h2>Total spending: $<span id='total-spending'>0</span></h2>
+        </div>
+    </header>
+
+    <div class="main-container"></div>
+    
+</body>
+</html>

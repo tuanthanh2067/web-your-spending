@@ -1,0 +1,270 @@
+*, *::after, *::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    
+}
+
+.overlay {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: rgba(0,0,0,.97);
+    background-repeat: no-repeat;
+    background-size: auto;
+    display: none;
+    animation: overlay 2s forwards;
+}
+
+.overlay .form {
+    display: block;
+    min-height: 70%;
+    width: 40%;
+    border: 1px solid white;
+    color: white;
+
+}
+.overlay .form h2 {
+    min-height: 3%;
+    text-align: center;
+}
+
+.overlay .form ul {
+    min-height: 60%;
+}
+
+.bottom-btn {
+    min-height: 7%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bottom-btn button {
+    margin: 1.5em;
+    padding: 1em;
+    font-size: 1.125em;
+    font-weight: bold;
+    border: none;
+    border-radius: 0.75em;
+    cursor: pointer
+}
+
+.bottom-btn button:hover {
+    background: rgba(255, 255, 255, 0.685);
+}
+
+header {
+    display: flex;
+    height: 6.75em;
+    width: 100%;
+    color: white;
+    justify-content: space-between;
+    background: linear-gradient(90deg, #020024, #12859d);
+
+}
+
+header button {
+    font-size: 1rem;
+    padding: 0.5em;
+    margin: 1.45em 1em 0.75em;
+    min-height: 30%;
+    border: none;
+    background-color: white;
+    border-radius: 5%;
+    color: black;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+header button:hover {
+    background-color: #11806ef3;
+    color: white;
+}
+
+.btn-create {
+    min-width: 4.5em;
+}
+
+header h3 {
+    font-weight: normal;
+    margin-left: 0.75em;
+}
+
+.middle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.middle a {
+    text-decoration: none;
+    color: white;
+    font-size: 2rem;
+}
+
+.middle a:hover {
+    color: rgba(73, 192, 172, 0.719);
+}
+
+.right-most {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-right: 1.5em;
+}
+
+.main-container {
+    display: flex;
+    height: 90vh;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#thereIsNothing {
+    margin: auto auto;
+    position: relative;
+    font-size: 3.75rem;
+    font-weight: bold;
+    animation: overlay 6s forwards;
+}
+
+#thereIsNothing::before {
+    content: '';
+    position: absolute;
+    width: 6em;
+    background: linear-gradient(217deg, rgba(255,0,0,.8), rgba(255,0,0,0) 70.71%),
+    linear-gradient(127deg, rgba(0,255,0,.8), rgba(0,255,0,0) 70.71%),
+    linear-gradient(336deg, rgba(0,0,255,.8), rgba(0,0,255,0) 70.71%);
+    height: 0.20em;
+    bottom: 1px;
+    z-index: -1;
+    margin-left: -5px;
+}
+
+.sheet {
+    height: 350px;
+    max-height: 400px;
+    width: 300px;
+    margin: 1.5em 1.5em;
+    border: 1px solid black;
+}
+
+.upper {
+    min-height: 75%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid black;
+}
+
+.upper:hover {
+    background-color: rgba(34, 24, 24, 0.123);
+}
+
+.upper button {
+    border: none;
+    font-size: 1.25rem;
+    padding: 1em;
+    border-radius: 50%;
+    background-color: rgba(20, 114, 143, 0.308);
+    cursor: pointer;
+}
+
+.lower {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 25%;
+    
+}
+
+.lower h2 {
+    font-weight: normal;
+}
+
+.lower h3 {
+    font-weight: normal;
+}
+
+@keyframes overlay {
+    0% {
+        opacity: 0;
+    }
+    30% {
+        opacity: 1;
+    }
+    70% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.form-div {
+    display: flex;
+}
+
+.form-div input {
+    padding: 0.5em;
+    margin: 0.5em;
+    font-size: 1.2em;
+    font-weight: bold;
+    width: 45%;
+    border: none;
+    border-radius: 5%;
+}
+
+.form-div button {
+    padding: 0em 0.65em;
+    margin: 0.5em;
+    font-size: 1.25em;
+    cursor: pointer;
+    border: none;
+    border-radius: 15%;
+}
+
+.form-div button:hover {
+    background: rgba(255, 255, 255, 0.726);
+}
+
+.item {
+    display: flex;
+    margin: 1.25em auto;
+    width: 90%;
+    border: 1px solid white;
+
+}
+
+.box {
+    width: 45%;
+    list-style: none;
+    color: white;
+    font-weight: bold;
+    padding: 0.5em;
+}
+
+#box {
+    text-align: right;
+}
+
+.item button {
+    width: 12.5%;
+    background: rgba(0,0,0,.95);
+    border: none;
+    border-left: 1px solid white;
+    color: white;
+    cursor: pointer;
+}
